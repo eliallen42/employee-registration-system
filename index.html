@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        JavaScript Final Project
+        Simple Employee Registration System
+
+        Author: Eli Allen
+        Date: 3/28/2025
+    
+        Filename: index.html
+    -->
+    <meta charset ="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="employees.js" defer></script>
+    <script src="index.js" defer></script>
+
+</head>
+<body id="employee-directory">
+    <!-- Header for the Employee Directory page -->
+    <header>
+        <h1>Employee Directory</h1>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search by Id# or Last Name, First Name"/>
+        <button id="search-button" type="button">Search</button>    
+    </div>
+
+    <!-- Table with summarized employee data -->
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="employee-table-body"> 
+                <!-- Employee data inserted dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Add button that links to Employee Registration Form -->
+        <a href="regForm.html" class="add-button">Add New Employee</a>
+    </main>
+</body>
+</html>
